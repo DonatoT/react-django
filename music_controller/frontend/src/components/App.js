@@ -1,6 +1,9 @@
  import { ContactSupportRounded } from "@material-ui/icons";
 import React, {Component} from "react";
 import {render} from "react-dom"; 
+import CreateRoomPage from "./CreateRoomPage";
+import HomePage from "./HomePage";
+import RoomJoinPage from "./RoomJoinPages";
 
 
  export default class App extends Component {
@@ -10,11 +13,14 @@ import {render} from "react-dom";
     }
 
     render(){
-        return <h1> Testing React code </h1>;
+        return (
+            <div>
+                <HomePage />
+            </div>
         
-        
+        );
     }
  }
 
  const appDiv = document.getElementById("app");
- render (<App/>, appDiv);
+ render (<App />, appDiv);
